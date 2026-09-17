@@ -1,0 +1,18 @@
+{
+  "minimumJustificationCharacters": 120,
+  "nullishJustificationMarker": "UNTRUST-ALLOW-NULLISH:",
+  "forbiddenImports": [
+    {
+      "module": "express",
+      "message": "Import @untrust/express so request input crosses the validation boundary.",
+      "allowPaths": ["packages/express/**"]
+    }
+  ],
+  "forbiddenCalls": [
+    {
+      "symbol": "console.log",
+      "message": "Use the application's structured logger instead."
+    }
+  ]
+}
+

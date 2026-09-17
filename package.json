@@ -1,0 +1,19 @@
+{
+  "name": "@untrust/buildgates",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "bin": { "untrust-buildgates": "./dist/cli.js" },
+  "files": ["dist", "README.md", "buildgates.example.json"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
+
